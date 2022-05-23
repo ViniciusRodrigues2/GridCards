@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100vw;
+    background-color: #cad;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+#grid{
+    background-color: #0ea0e0;
+    max-width: 950px;
+    overflow: hidden;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-rows: 1fr;
+}
+#grid .card{
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px 5px 0 0;
+    margin: 12px;
+}
+#grid .card .content{
+    padding: 12.5px;
+}
+#grid .card .content p{
+    font-size: .75em;
+    line-height: 1.4;
+}
+#grid .card .content h2{
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 6.25px;
+}
+#grid .card .img{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+#grid .card .img img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: all .4s ease-in;
+    transform-origin: left;
+}
+#grid .card .img img:hover{
+    transform: scale(1.2);
+}
+#grid .card .but{
+    padding: 12.5px;
+}
+#grid .card .but a{
+    display: inline-block;
+    background-color: rgb(24, 121, 167);
+    border: 2px solid rgb(24, 121, 167);
+    padding: 1rem 1.3rem;
+    text-decoration: none;
+    color: white;
+    font-size: .85rem;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+#grid .card .but a:hover{
+    background-color: transparent;
+    border: 2px solid rgb(24, 121, 167);
+    color: rgb(24, 121, 167);
+    box-shadow: 0 3px 8px rgb(24, 121, 167);
+}
