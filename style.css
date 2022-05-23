@@ -13,9 +13,15 @@ body{
     padding-bottom: 50px;
     overflow-x: hidden;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+h1{
+    text-align: center;
+    color: rgb(238, 224, 238);
+    font-size: 2em;
+    text-transform: capitalize;
+}
+h1.flex-i{
+    margin-top: 20px;
 }
 img{
     width: 100%;
@@ -25,6 +31,7 @@ img{
     background-color: #0ea0e0;
     max-width: 950px;
     overflow: hidden;
+    margin: 0 auto;
 }
 #grid{
     display: grid;
@@ -88,6 +95,81 @@ img{
     transition: all .3s ease-in;
 }
 #grid .card .but a:hover{
+    background-color: transparent;
+    border: 2px solid rgb(24, 121, 167);
+    color: rgb(24, 121, 167);
+    box-shadow: 0 3px 8px rgb(24, 121, 167);
+}
+
+/* flex-box */
+
+#flex{
+    display: flex;
+    max-width: 945px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    background-color: #0ea0e0;
+}
+#flex .card{
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px 5px 0 0;
+    flex: 1 1 250px;
+    margin: 12px;
+}
+#flex .card .content{
+    padding: 12.5px;
+}
+#flex .card .content p{
+    font-size: .75em;
+    line-height: 1.4;
+}
+#flex .card .content h2{
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 6.25px;
+}
+#flex .card .img{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+#flex .card .img img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: all .4s ease-in;
+    transform-origin: left;
+}
+#flex .card .img img:hover{
+    transform: scale(1.2);
+}
+#flex .card .but{
+    padding: 12.5px;
+}
+#flex .card .but a{
+    display: inline-block;
+    background-color: rgb(24, 121, 167);
+    border: 2px solid rgb(24, 121, 167);
+    padding: 1rem 1.3rem;
+    text-decoration: none;
+    color: white;
+    font-size: .85rem;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+#flex .card .but a:hover{
     background-color: transparent;
     border: 2px solid rgb(24, 121, 167);
     color: rgb(24, 121, 167);
